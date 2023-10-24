@@ -1,19 +1,22 @@
 #pragma once
-class FrontMiddleBackQueue
-{
+#include <vector>
+
+class FrontMiddleBackQueue {
+private:
+    std::vector<int> queue;
+
 public:
-	FrontMiddleBackQueue();
+    FrontMiddleBackQueue();
 
-	void pushFront(int value);
+    void pushFront(int value);
 
-	void pushMiddle(int value);
+    void pushMiddle(int value);
 
-	void pushBack(int value);
+    void pushBack(int value);
 
-	int popFront();
+    int popFront();
 
-	int popMiddle();
+    int popMiddle();
 
-	int popBack();
+    int popBack();
 };
-
